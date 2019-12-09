@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.gravendev'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile group: 'com.zaxxer', name: 'HikariCP', version: '3.3.1'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.16'
+    implementation 'com.github.NeutronStars:NBot:b_3.0.4'
+}
